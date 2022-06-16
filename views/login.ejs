@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GYM MANAGEMENT SYSTEM</title>
+    <link rel="stylesheet" href="css\login.css"></link>
+    <script src="javascript\workout.js"></script>
+    <script src='https://kit.fontawesome.com/a076d05399.js' crossorigin='anonymous'></script>
+</head>
+    <body background="images\login1.jpg">
+    <div class="head">
+    <br>
+    <h1>GYM MANAGEMENT SYSTEM</h1>
+    <h1>LOGIN PAGE</h1><br><br>
+    <form name="Myform" autocomplete="off" action="/validatesign" method="post">
+    <p id="sep"><%=msg%></p><br>
+    <div class="background">
+        <div class="transbox">
+        
+        </i><input type="text" class="yui" name="EMAIL" placeholder="EMAIL" onblur="validate()"><br><br>
+    <p id="un">&nbsp</p>
+    <input type="password" name="PASS"  class="yui" placeholder="PASSWORD" onblur="PASSWORD()"><br><br>
+    <p id="ps">&nbsp</p>
+    <button type="submit" class="a" disabled id="logi">LOG IN </button><br><br>
+    <h2>NEW USER? CLICK AND SIGN UP YOUR ACCOUNT DOWN BELOW</h2></form>
+    <a href="SIGNUP">
+        <button class="a">SIGN UP</button></a> </div><br><br><p>
+    </div></div>
+</body>
+</html>

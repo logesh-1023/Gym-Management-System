@@ -1,0 +1,78 @@
+<html>
+  <head>
+    <title>WEEKLY PLAN</title>
+    <link rel="stylesheet" href="css\contact.css">
+    <link href='https://unpkg.com/boxicons@2.0.7/css/boxicons.min.css' rel='stylesheet'>
+     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   </head>
+<body>
+  <div class="sidebar">
+    <div class="logo-details">
+      <span class="logo_name">GYM MANAGEMENT</span>
+    </div>
+      <ul class="nav-links">
+        <li>
+          <a href="/dashboardadmin">
+            <i class='bx bx-box'></i>
+            <span class="links_name">HOME</span>
+          </a>
+        </li>
+        <li>
+          <a href="/workoutshedule">
+            <i class='bx bx-box' ></i>
+            <span class="links_name">WORKOUTS LIST</span>
+          </a>
+        </li>
+        <li>
+          <a href="/addworkout">
+            <i class='bx bx-box' ></i>
+            <span class="links_name">ADD WORKOUT</span>
+          </a>
+        </li>
+        <li>
+          <a href="/contact" class="active">
+            <i class='bx bx-box' ></i>
+            <span class="links_name">CONTACT</span>
+          </a>
+        </li>
+        <li class="log_out">
+            <a href="/login"><i class="bx bx-log-out"></i><button>LogOut</button></a>
+         </li>
+      </ul>
+  </div>
+  <section class="home-section">
+    <nav>
+      <div class="sidebar-button">
+        <span class="dashboard">
+          <p><i class='bx bx-user'></i>WEEKLY PLAN</p></span>
+      </div>
+    </nav>
+    <div class="home-content">
+      <hr> 
+      </div>
+      <BR>
+      <h1>CLIENTS WEEKLY PLAN</h1>
+      <form name="Myform" autocomplete="off" action="/send" method="post">
+    <div class="home-content">
+      <div class="overview-boxes">
+        <center><div class="title">
+            </div>
+            <label for="week" id="dropdown">SELECT DAY:</label>
+            <select name="week" id="week">
+              <option value="MONDAY">MONDAY</option>
+              <option value="TUESDAY">TUESDAY</option>
+              <option value="WEDNESDAY">WEDNESDAY</option>
+              <option value="THURSDAY">THURSDAY</option>
+              <option value="FRIDAY">FRIDAY</option>
+              <option value="SATURDAY">SATURDAY</option>
+              <option value="SUNDAY">SUNDAY</option>
+            </select>
+            <br><br>
+            <p id="text">WORKOUT AND INSTRUCTION : <input type="text" name="instruct"></p><br><br><hr><br>
+            <button type="submit">SEND</button>
+      </div><p id="pop"><br>
+        <br><%=msg%></p>
+    </div></form>
+  </section>
+</body>
+</html>

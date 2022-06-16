@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SIGN UP</title>
+    <link rel="stylesheet" href="css/signup.css"></link>
+    <script src="javascript\workout.js"></script>
+</head>
+<body background="images\sign up.webp">
+    <form name="Myform" autocomplete="off" action="/submit" method="post">
+    <center><div class="title">
+    <h1>ENTER YOUR DETAILS TO SIGN UP YOUR ACCOUNT</h1> 
+    </div>
+    <div class="head">
+    <input type="text" name="FIRST" class="yui" placeholder="FIRST NAME" onblur="firs()">
+    <p id="fir">&nbsp</p>
+    <input type="text" name="LAST" class="yui" placeholder="LAST NAME" onblur="last()">
+    <p id="LAS">&nbsp</p>
+    <input type="text" name="email" class="yui" placeholder="EMAIL" onblur="cmail()">
+    <p id="CEMAIL">&nbsp</p>
+    <input type="text" name="address" class="yui" placeholder="ADDRESS" onblur="caddress()">
+    <p id="CADDRESS">&nbsp</p>
+    <input type="number" name="age"  class="yui" min="13" placeholder="AGE MIN 13">
+    <p id="SS">&nbsp</p>
+    <input type="password" name="password" class="yui"placeholder="Enter PASSWORD" onblur="pass()">
+    <p id="PASS">&nbsp</p>
+    <input type="password" name="repassword" class="yui" placeholder="Confirm PASSWORD" onblur="repass()">
+    <p id="REPASS">&nbsp</p>
+    <button type="submit" disabled id="signu">SIGNUP</button>
+    <button onclick="reset()">RESET</button>
+    </div></center></form>
+</body>
+</html>

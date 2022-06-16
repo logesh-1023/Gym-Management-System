@@ -1,0 +1,80 @@
+<html>
+  <head>
+    <title>WEEKLY PLAN</title>
+    <link rel="stylesheet" href="css\contact.css">
+    <link href='https://unpkg.com/boxicons@2.0.7/css/boxicons.min.css' rel='stylesheet'>
+     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   </head>
+<body>
+  <div class="sidebar">
+    <div class="logo-details">
+      <span class="logo_name">GYM MANAGEMENT</span>
+    </div>
+      <ul class="nav-links">
+        <li>
+          <a href="/dashboardadmin">
+            <i class='bx bx-box'></i>
+            <span class="links_name">HOME</span>
+          </a>
+        </li>
+        <li>
+          <a href="/workoutshedule">
+            <i class='bx bx-box' ></i>
+            <span class="links_name">WORKOUTS LIST</span>
+          </a>
+        </li>
+        <li>
+            <a href="addworkout" class="active">
+              <i class='bx bx-box' ></i>
+              <span class="links_name">ADD WORKOUT</span>
+            </a>
+          </li>
+        <li>
+          <a href="/contact" >
+            <i class='bx bx-box' ></i>
+            <span class="links_name">CONTACT</span>
+          </a>
+        </li>
+        <li class="log_out">
+            <a href="/login"><i class="bx bx-log-out"></i><button>LogOut</button></a>
+         </li>
+      </ul>
+  </div>
+  <section class="home-section">
+    <nav>
+      <div class="sidebar-button">
+        <span class="dashboard">
+          <p><i class='bx bx-user'></i>WEEKLY PLAN</p></span>
+      </div>
+    </nav>
+    <div class="home-content">
+      <hr> 
+      </div>
+      <BR>
+      <h1>CLIENTS WEEKLY PLAN</h1>
+      <form name="Myform" autocomplete="off" action="/update" method="post">
+    <div class="home-content">
+      <div class="overview-boxes">
+        <center><div class="title">
+            </div>
+            <label for="workout" id="workout">SELECT WORKOUT:</p></label>
+            <select name="workout" id="workout">
+              <option value="CHEST">CHEST</option>
+              <option value="BICEPS">BICEPS</option>
+              <option value="SHOULDERS">SHOULDERS</option>
+              <option value="TRICEPS">TRICEPS</option>
+              <option value="BACK">BACK</option>
+              <option value="LEGS">LEGS</option>
+              <option value="ABS">ABS</option>
+            </select>
+            <br><br>
+              <input type="text" name="wname" placeholder="ADD WORKOUT"><br><br>
+              <input type="text" name="sets" placeholder="SETS"><br><br>
+              <input type="text" name="rest" placeholder="REST IN SEC"><br><br>
+              <input type="text" name="description" placeholder="DESCRIPTION"><br><br>
+            <button type="submit">SEND</button><br>
+      </div><p id="pop"><br>
+    </div></form>
+  </section>
+</body>
+</html>

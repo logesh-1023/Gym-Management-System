@@ -1,0 +1,84 @@
+<html>
+  <head>
+    <title>DASHBOARD</title>
+    <link rel="stylesheet" href="css\workout.css">
+    <link href='https://unpkg.com/boxicons@2.0.7/css/boxicons.min.css' rel='stylesheet'>
+     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   </head>
+<body>
+  <div class="sidebar">
+    <div class="logo-details">
+      <span class="logo_name">GYM MANAGEMENT</span>
+    </div>
+      <ul class="nav-links">
+        <li>
+          <a href="/dashboardadmin">
+            <i class='bx bx-box'></i>
+            <span class="links_name">HOME</span>
+          </a>
+        </li>
+        <li>
+          <a href="#" class="active">
+            <i class='bx bx-box' ></i>
+            <span class="links_name">WORKOUTS LIST</span>
+          </a>
+        </li>
+        <li>
+          <a href="/addworkout">
+            <i class='bx bx-box' ></i>
+            <span class="links_name">ADD WORKOUT</span>
+          </a>
+        </li>
+        <li>
+          <a href="/contact">
+            <i class='bx bx-box' ></i>
+            <span class="links_name">CONTACT</span>
+          </a>
+        </li>
+        <li class="log_out">
+           <a href="/login"><i class="bx bx-log-out"></i><button>LogOut</button></a>
+        </li>
+      </ul>
+  </div>
+  <section class="home-section">
+    <nav>
+      <div class="sidebar-button">
+        <span class="dashboard">
+          <p>WORKOUT LIST</p>
+          <hr>
+      </div>
+    </nav>
+    <div class="home-content">
+      <div class="overview-boxes">
+        <table id="table" border="2">
+          <tr>
+              <th>S.NO</th>
+              <th>Muscle</th>
+              <th>Workout</th>
+              <th>SETS</th>
+              <th>REST(sec)</th>
+          </tr>
+          <%
+          if(r.length!=0){
+          var i=1;
+          r.forEach(function(data){
+          %>
+          <tr>
+              <td><%=i; %></td>
+              <td><%=data.Muscle %></td>
+              <td><%=data.Workout_name%></td>
+              <td><%=data.sets %></td>
+              <td><%=data.rest_time_in_sec %></td>
+          </tr>
+          <%  i++; }) %>
+          <% } else{ %>
+              <tr>
+                  <td colspan="5">No Data Found</td>
+              </tr>
+          <% } %>
+      </table>
+      </div>
+    </div>
+  </section>
+</body>
+</html>
